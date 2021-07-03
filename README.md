@@ -11,6 +11,6 @@ One just has to navigate to the section they need recordings or notes for and cl
 
 **Specifics**: 
 
-The languages used are CSS, HTML, and Javascript. Libraries and Frameworks include AOS and Bootstrap. 
+The languages used are CSS, HTML, and Javascript. Library and Framework include AOS and Bootstrap. 
 
 
