@@ -1,0 +1,745 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* --  background image section  -- */
+
+.bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-img .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .8;
+    background: #1C1D21;
+}
+
+
+h3{
+    margin-top: 50px;
+    color: white;
+}
+
+
+
+header {
+    position: relative;
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+}
+
+#home .home-wrapper {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+
+.text{
+    top: 5vh;
+    position: relative;
+    margin: 0 auto;
+    width: 10em;
+    color: white;
+    border-right: 2px solid rgba(255,255,255,0.0);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden; 
+    font-size: 50px;
+    justify-content: center;
+}
+
+.text2{
+    top: 5vh;
+    position: relative;
+    margin: 0 auto;
+    width: 10em;
+    color: white;
+    border-right: 2px solid rgba(255,255,255,0.0);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden; 
+    font-size: 50px;
+    justify-content: center;
+    
+}
+
+
+
+button{
+
+    padding: 6px 30px;
+    background: transparent;
+    border: 3px solid white;
+    font-size: 25px;
+    color: white;
+    justify-content: center;
+}
+
+
+
+.animation{
+    animation: typewriter 2s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) 6 normal;
+}
+
+@keyframes typewriter{
+from{
+    width: 0%;
+}
+to{
+    width:11.5em;
+}
+}
+
+@keyframes blinkTextCursor {
+    from{
+
+        border-right-color: rgba(255,255,255,0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+
+
+.animation2{
+    animation: typewriter2 2s steps(40) 1s 1 normal both,
+    blinkTextCursor2 750ms steps(40) infinite normal;
+    animation-delay: 3s;
+}
+
+@keyframes typewriter2{
+0%{
+    width: 0%;
+}
+100%{
+    width:8em;
+}
+}
+
+@keyframes blinkTextCursor2 {
+    from{
+        border-right-color: rgba(255,255,255,0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+
+.academics{
+    padding-top: 10vh;
+    font-size: 70px;
+    text-align: center; 
+
+}
+
+.academics::after {
+    content: "";
+    display: block;
+    height: 0.4rem;
+    width: 10rem;
+    background-color: #2C5364   ;
+    margin: 0px auto 0px;
+}
+
+
+.cultural{
+    padding-top: 7vh;
+    font-size: 70px;
+    text-align: center; 
+    color: white;
+
+}
+
+.cultural::after {
+    content: "";
+    display: block;
+    height: 0.4rem;
+    width: 10rem;
+    background-color: rgb(1, 3, 10)   ;
+    margin: 0px auto 0px;
+}
+
+
+.scitech{
+    padding-top: 7vh;
+    font-size: 70px;
+    text-align: center; 
+    color: white;
+
+}
+
+.scitech::after {
+    content: "";
+    display: block;
+    height: 0.4rem;
+    width: 10rem;
+    background-color: #3b1a4b   ;
+    margin: 0px auto 0px;
+}
+
+
+
+
+.acad-bg{
+    background-image: url(bg-acad.jpg);
+    background-size: cover;
+}
+
+.scitech-bg{
+    background: linear-gradient(to bottom right, rgb(6, 13, 39), rgb(6, 13, 39),rgb(6, 13, 39));
+    /*rgb(101, 78, 131),rgb(50, 29, 75), rgb(55, 24, 85)*/  
+}
+
+.Cultural-bg{
+    background: linear-gradient(to bottom right, rgb(39, 8, 51),rgb(39, 8, 51), rgb(39, 8, 51));  
+    padding-bottom: 100px;  
+}
+
+p{
+    font-size: 25px;
+}
+
+
+.transition{
+    height: 2.5vh;
+    background-image: linear-gradient(to top ,grey,white, grey);
+}
+
+.transition3{
+    height: 10vh;
+    background-image: linear-gradient(to bottom,rgb(6, 13, 39), rgb(39, 8, 51));
+}
+
+
+
+
+.container {
+    width: 90%;
+    margin-top: 50px;
+  }
+  .heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    width: 20%;
+    background: #fff;
+    box-shadow: 0px 0px 15px rgb(58, 58, 58);
+    margin-bottom: 50px;
+    transition: 0.3s;
+    border-radius: 20px;
+    padding: 0;
+    background-image: linear-gradient(to top ,#c5c5c5 ,white, white);
+
+  }
+
+ 
+  
+  .card-header{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .card-body{
+
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .card-body .btn{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #0F2027, #2C5364);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+    margin: 0px 60px;;
+    transition: transform 200ms;
+
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+  
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+
+  img{
+      width: 100%;
+      height: 130px;
+      border-radius: 20px 20px 0px 0px;
+  }
+
+
+.navbar-nav{
+    margin-right: 50px;
+}
+.nav-item{
+    margin-right: 20px;
+    font-size: 18px;
+    color: white;
+}
+.nav-img{
+width: 50px;
+height: 40px;
+margin-left: 50px;
+}
+
+nav.navbar{
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+ }
+ 
+ nav.navbar-inverse {
+     background-color: #222;
+     border-color: #080808;
+ }
+ 
+ nav.navbar.transparent {
+   background-color:rgba(0,0,0,0);
+ }
+
+ .change-content{
+     color: transparent ;
+     margin-bottom: 7vh;
+     margin-top: 10vh;
+     padding: 5px;;
+ }
+
+
+ .change-content:after{
+    content: 'khakjsh';
+    animation: changetext 20s infinite step-start;
+    animation-delay: 6s;
+ }
+
+ @keyframes changetext{
+     8%{
+         content: "Artificial Intelligence";
+        font-family: 'Bad Script', cursive;
+     }
+     16%{
+        content: "Biomedical";
+        color: rgb(168, 188, 202);
+        font-family: 'Covered By Your Grace', cursive;
+    }
+    24%{
+        content: "Chemical Engineering";
+        font-family: 'Fugaz One', cursive;
+    }
+    32%{
+        content: "Civil Engineering";
+        color: rgb(168, 188, 202);
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+    40%{
+        content: "Computer Science";
+
+        font-family: 'Kaushan Script', cursive;
+    }
+    48%{
+        content: "Design";
+        color: rgb(168, 188, 202);
+        font-family: 'Finger Paint', cursive;
+    }
+    56%{
+        content: "Electrical Engineering ";
+        font-family: 'Give You Glory', cursive;
+    }
+    64%{
+        content: "Engineering Physics";
+        color: rgb(168, 188, 202);
+        font-family: 'Quantico', sans-serif;
+    }
+    72%{
+        content: "Engineering Science";
+
+        font-family: 'Bad Script', cursive;
+    }
+    80%{
+        content: "Mathematics and Computing";
+
+        color: rgb(168, 188, 202);
+        font-family: 'Shadows Into Light Two', cursive;
+    }
+    88%{
+        content: "Mechanical Engineering";
+
+        color: rgb(168, 188, 202);
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+    100%{
+        content: "Metallurgy";
+        font-family: 'Rock Salt', cursive;
+        color: rgb(168, 188, 202);
+    }
+}
+
+
+
+::-webkit-scrollbar-track {
+    background-color:  #212529;
+    overflow: overlay;
+}
+::-webkit-scrollbar {
+    width: 8px !important;
+    overflow: overlay;
+    background: transparent;
+
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, rgb(54, 54, 54));
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, rgb(168, 188, 202))
+}
+
+  
+@media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+
+@media(max-width: 768px){
+    .text, .text2{
+        font-size: 25px;
+    }
+    button{
+ 
+        font-size: 15px;
+    }
+    .nav-img{
+        width: 40px;
+        height: 33px;
+        margin-left: 10px;
+        }
+    @keyframes typewriter2{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width:195px;
+        }
+    }
+    @keyframes typewriter{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width:290px;
+        }
+    }
+    .academics{
+        font-size: 50px;
+    }}
+
+
+
+
+    
+    
+    .image{
+        background: black;
+        position: relative;
+        flex: 1;
+        max-width: 300px;
+        height: 300px;
+        margin: 20px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        transition: 300ms;
+        
+    }
+    
+    .image img{
+
+        position: relative;
+        transition: 0.6s;
+        transition-property: opacity;
+        height: 300px;
+        width: 300px;
+        right: 12px;
+        border-radius: 15px;
+        
+    }
+    
+    .image:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .image:hover img{
+        opacity: 1;
+        
+    }
+    
+    .image .details{
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .image .details h2{
+        text-align: center;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-top: 70px;
+        transition: 0.4s;
+        transition-property: transform;
+    }
+    
+
+    .more{
+        position: absolute;
+        background: rgba(255, 255, 255, 0.0);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 15px;
+        bottom: -60px;
+        transition: 0.6s;
+        transition-property: bottom;
+    }
+    
+    .image:hover .more{
+        bottom: 0;
+    }
+    
+    .more .read-more{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        align-items: center;
+    }
+    
+    .more .read-more span{
+        font-weight: 900;
+    }
+    
+    .more .icon-links i{
+        color: #000;
+        font-size: 20px;
+    }
+    
+    .more .icon-links a:not(:last-child) i{
+        margin-right: 20px;
+    }
+    
+    /* Responsive CSS */
+    
+    @media (max-width: 1080px){
+        .image{
+            flex: 100%;
+            max-width: 300px;
+        }
+    }
+    
+    @media (max-width: 400px){
+        .image .details p{
+            font-size: 16px;
+        }
+    
+        .more .read-more, .more .icon-links a i{
+            font-size: 18px;
+        }
+    }
+
+
+    footer{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #111;
+        height: auto;
+        width: 100%;
+        font-family: "Open Sans";
+        color: #fff;
+    }
+    .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content h3{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    .footer-content p{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+    }
+    .socials{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 2rem 0;
+    }
+    .socials li{
+        margin: 0 10px;
+    }
+    .socials a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .socials a i{
+        font-size: 1.1rem;
+        transition: color .4s ease;
+    
+    }
+    .socials a:hover i{
+        color: aqua;
+    }
+    
+    .footer-bottom{
+        background: #000;
+        width: 100%;
+        padding: 2px;
+        text-align: center;
+    }
+    .footer-bottom p{
+        font-size: 12px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+    }
+    .footer-bottom span{
+        text-transform: uppercase;
+        opacity: .4;
+        font-weight: 200;
+    }
+
+    .mail{
+        font-size: 12px;
+        padding-bottom: 30px;
+
+    }
+    .mail:hover{
+       font-weight: bold;
+       cursor: pointer;
+    }
+
+
+    
+section {
+    height:75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+  }
+  
+ 
+  .section4 {
+    background: #22a6b3;
+  }
+  
+  .to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
+
+
+
+
+
