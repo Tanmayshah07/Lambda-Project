@@ -13,6 +13,6 @@ One just has to navigate to the section they need recordings or notes for and cl
 
 The languages used are CSS, HTML, and Javascript. Library and Framework include AOS and Bootstrap. 
 
-**Website link:**https://tanmayshah07.github.io/Lambda-Project/
+**Website link**: https://tanmayshah07.github.io/Lambda-Project/
 
 
